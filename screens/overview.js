@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 
 import HomeScreen from './screens/home';
 
-export default function App() {
+export default function OverviewScreen() {
   return (
     <View style={styles.container}>
       <HomeScreen/>
