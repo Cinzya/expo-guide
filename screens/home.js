@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, TouchableNativeFeedback } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
+import { Icon } from 'react-native-elements';
 
 class HomeScreen extends Component {
     render() {
@@ -13,9 +14,9 @@ class HomeScreen extends Component {
 
                 <View style={styles.link}>
                     <Text style={styles.h2}>Hier geht's zur Übersicht</Text>
-                    <TouchableNativeFeedback>
-                        <Text style={styles.button}>→</Text>
-                    </TouchableNativeFeedback>
+
+                    <Icon name='arrow-right' type='material-community' color='#D36462' reverse/>
+
                 </View>
             </View>
         )
@@ -52,12 +53,11 @@ const styles = StyleSheet.create({
         borderRadius: 60/2,
         color: 'white',
         backgroundColor: '#D36462',
-        justifyContent: 'center',
-        alignContent: 'center'
+        fontSize: 50,
     },
     h1: {
         color: '#D36462',
-        fontSize: 34
+        fontSize: 30
     },
     h2: {
         fontSize: 20
