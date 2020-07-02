@@ -1,12 +1,14 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import HomeScreen from './screens/home';
-
 export default function OverviewScreen() {
   return (
     <View style={styles.container}>
-      <HomeScreen/>
+      <Text>Übersicht Ausstellungsstücke</Text>
+
+      <View>
+        <Text>Raum 1</Text>
+      </View>
     </View>
   );
 }

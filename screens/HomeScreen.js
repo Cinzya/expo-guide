@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, TouchableNativeFeedback } from 'react-native';
 import { Icon } from 'react-native-elements';
+import Navigation from '../navigation/navigation';
 
 class HomeScreen extends Component {
     render() {
@@ -12,12 +13,15 @@ class HomeScreen extends Component {
                     <Text>Logo Museum</Text>
                 </View>
 
-                <View style={styles.link}>
-                    <Text style={styles.h2}>Hier geht's zur Übersicht</Text>
+                <TouchableNativeFeedback
+                onPress={() => navigation.navigate('Home')}>
+                    <View style={styles.link}>
+                        <Text style={styles.h2}>Hier geht's zur Übersicht</Text>
 
-                    <Icon name='arrow-right' type='material-community' color='#D36462' reverse/>
+                        <Icon name='arrow-right' type='material-community' color='#D36462' reverse/>
 
-                </View>
+                    </View>
+                </TouchableNativeFeedback>
             </View>
         )
     }
