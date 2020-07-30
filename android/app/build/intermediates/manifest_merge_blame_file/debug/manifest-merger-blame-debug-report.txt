@@ -1,0 +1,111 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.testproject03"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\debug\AndroidManifest.xml:5:5-77
+11-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\debug\AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:4:5-67
+12-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:5:5-76
+13-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:5:22-74
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:6:5-78
+14-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:6:22-76
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->[com.facebook.flipper:flipper:0.37.0] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\623174cd4892d9fb924ac44b102b25c0\flipper-0.37.0\AndroidManifest.xml:16:5-76
+15-->[com.facebook.flipper:flipper:0.37.0] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\623174cd4892d9fb924ac44b102b25c0\flipper-0.37.0\AndroidManifest.xml:16:22-73
+16    <uses-permission android:name="android.permission.BLUETOOTH" />
+16-->[com.estimote:proximity-sdk:1.0.5] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\bee57f76314900ef2010d0df63866c27\jetified-proximity-sdk-1.0.5\AndroidManifest.xml:11:5-68
+16-->[com.estimote:proximity-sdk:1.0.5] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\bee57f76314900ef2010d0df63866c27\jetified-proximity-sdk-1.0.5\AndroidManifest.xml:11:22-65
+17    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- Needed for Bluetooth scanning on Android M and above. -->
+17-->[com.estimote:proximity-sdk:1.0.5] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\bee57f76314900ef2010d0df63866c27\jetified-proximity-sdk-1.0.5\AndroidManifest.xml:12:5-74
+17-->[com.estimote:proximity-sdk:1.0.5] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\bee57f76314900ef2010d0df63866c27\jetified-proximity-sdk-1.0.5\AndroidManifest.xml:12:22-71
+18    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->[com.estimote:scanning-plugin:0.25.4] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\e5349577cbc2d6f9b2c4c5dbf44c240c\scanning-plugin-0.25.4\AndroidManifest.xml:16:5-88
+18-->[com.estimote:scanning-plugin:0.25.4] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\e5349577cbc2d6f9b2c4c5dbf44c240c\scanning-plugin-0.25.4\AndroidManifest.xml:16:29-85
+19
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.estimote:cloud-plugin:1.0.3] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\70e360f1228203507bcf731ee5dac6ea\cloud-plugin-1.0.3\AndroidManifest.xml:13:5-79
+20-->[com.estimote:cloud-plugin:1.0.3] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\70e360f1228203507bcf731ee5dac6ea\cloud-plugin-1.0.3\AndroidManifest.xml:13:22-76
+21
+22    <application
+22-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:8:5-28:19
+23        android:name="com.testproject03.MainApplication"
+23-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:9:7-38
+24        android:allowBackup="false"
+24-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:13:7-34
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.1.0] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\639e914bfc1efa21e36199d3ff2c5eef\core-1.1.0\AndroidManifest.xml:24:18-86
+26        android:debuggable="true"
+27        android:icon="@mipmap/ic_launcher"
+27-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:11:7-41
+28        android:label="@string/app_name"
+28-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:10:7-39
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:12:7-52
+30        android:theme="@style/AppTheme"
+30-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:14:7-38
+31        android:usesCleartextTraffic="true" >
+31-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\debug\AndroidManifest.xml:7:18-53
+32        <activity
+32-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:15:7-25:18
+33            android:name="com.testproject03.MainActivity"
+33-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:16:9-37
+34            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+34-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:18:9-86
+35            android:label="@string/app_name"
+35-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:17:9-41
+36            android:launchMode="singleTask"
+36-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:19:9-40
+37            android:windowSoftInputMode="adjustResize" >
+37-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:20:9-51
+38            <intent-filter>
+38-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:21:9-24:25
+39                <action android:name="android.intent.action.MAIN" />
+39-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:22:13-65
+39-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:22:21-62
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:23:13-73
+41-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:23:23-70
+42            </intent-filter>
+43        </activity>
+44        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+44-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:26:7-84
+44-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:26:17-81
+45
+46        <service android:name="com.kontakt.sdk.android.ble.service.ProximityService" />
+46-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:27:7-85
+46-->Z:\Studium\06_SS2020\SPMI\Client-Server\Praxisprojekt\reactnative\testProject03\android\app\src\main\AndroidManifest.xml:27:16-83
+47
+48        <receiver android:name="com.estimote.proximity_sdk.api.TriggerBroadcastReceiver" >
+48-->[com.estimote:proximity-sdk:1.0.5] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\bee57f76314900ef2010d0df63866c27\jetified-proximity-sdk-1.0.5\AndroidManifest.xml:15:9-19:20
+48-->[com.estimote:proximity-sdk:1.0.5] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\bee57f76314900ef2010d0df63866c27\jetified-proximity-sdk-1.0.5\AndroidManifest.xml:15:19-89
+49            <intent-filter>
+49-->[com.estimote:proximity-sdk:1.0.5] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\bee57f76314900ef2010d0df63866c27\jetified-proximity-sdk-1.0.5\AndroidManifest.xml:16:13-18:29
+50                <action android:name="com.estimote.proximity_trigger" />
+50-->[com.estimote:proximity-sdk:1.0.5] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\bee57f76314900ef2010d0df63866c27\jetified-proximity-sdk-1.0.5\AndroidManifest.xml:17:17-73
+50-->[com.estimote:proximity-sdk:1.0.5] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\bee57f76314900ef2010d0df63866c27\jetified-proximity-sdk-1.0.5\AndroidManifest.xml:17:25-70
+51            </intent-filter>
+52        </receiver>
+53
+54        <service
+54-->[com.estimote:scanning-plugin:0.25.4] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\e5349577cbc2d6f9b2c4c5dbf44c240c\scanning-plugin-0.25.4\AndroidManifest.xml:19:9-22:40
+55            android:name="com.estimote.scanning_plugin.packet_provider.service.PacketProviderWrapperService"
+55-->[com.estimote:scanning-plugin:0.25.4] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\e5349577cbc2d6f9b2c4c5dbf44c240c\scanning-plugin-0.25.4\AndroidManifest.xml:20:13-109
+56            android:enabled="true"
+56-->[com.estimote:scanning-plugin:0.25.4] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\e5349577cbc2d6f9b2c4c5dbf44c240c\scanning-plugin-0.25.4\AndroidManifest.xml:21:13-35
+57            android:exported="false" />
+57-->[com.estimote:scanning-plugin:0.25.4] C:\Users\msgsc\.gradle\caches\transforms-2\files-2.1\e5349577cbc2d6f9b2c4c5dbf44c240c\scanning-plugin-0.25.4\AndroidManifest.xml:22:13-37
+58    </application>
+59
+60</manifest>

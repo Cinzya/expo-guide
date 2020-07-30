@@ -1,0 +1,4 @@
+#Thu Jul 30 15:18:08 CEST 2020
+base.0=Z\:\\Studium\\06_SS2020\\SPMI\\Client-Server\\Praxisprojekt\\reactnative\\testProject03\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
