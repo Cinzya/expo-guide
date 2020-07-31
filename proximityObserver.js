@@ -9,7 +9,7 @@ const startProximityObserver = () => {
 
     //Declare zones with assigned beacons and radius
     //Here: Zone "mint" with radius of 5m and all beacons with tag "92.2.13"
-    const mint = new RNEP.ProximityZone(5, "test01");
+    const mint = new RNEP.ProximityZone(1, "test01");
 
     //Trigger when entering / exiting range of certain beacons
     mint.onEnterAction = context => {

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "Z:\\Studium\\06_SS2020\\SPMI\\Client-Server\\Praxisprojekt\\reactnative\\testProject03\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hi\\values-hi.xml",
+            "outputFile": "Z:\\Studium\\06_SS2020\\SPMI\\Client-Server\\Praxisprojekt\\expo-guide\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hi\\values-hi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\msgsc\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\values-hi\\values-hi.xml",
