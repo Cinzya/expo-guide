@@ -10,7 +10,8 @@ class HomeScreen extends Component {
         super(props)
         this.state = {
             setLoading: true,
-            rooms: ""
+            rooms: "",
+            items: ""
         }
     }
     componentDidMount() {
@@ -29,6 +30,22 @@ class HomeScreen extends Component {
             .then(() => console.log('New MySQL data set'))
             .catch((error) => console.error(error))
             .then(() => this.setState({setLoading: false}));           //Get rid of spinny thing
+
+        console.log('Starting Fetch Call 2')
+        //Fetch request to db host
+        fetch('http://192.168.178.69/expo-guide-backend/items.php', {
+            method: 'get',
+            mode: 'cors',
+            headers:{
+                'Content-Type': 'application/json',     //Type of content to be sent 
+                'Accept': 'application/json'            //and to be expected
+            }
+        })
+            .then((response) => response.json())      //Turn response into JSON
+            .then((json) => this.setState({items: json}))            //Write response to variable
+            .then(() => console.log(typeof(this.state.items)))
+            .catch((error) => console.error(error))
+            .then(() => this.setState({setLoading: false}));
       
     }
 
@@ -43,7 +60,7 @@ class HomeScreen extends Component {
                     </View>
         
                     <TouchableNativeFeedback
-                    onPress={() => this.props.navigation.navigate('Rooms') }>
+                    onPress={() => this.props.navigation.navigate('Rooms', {Rooms: this.state.rooms, Items: this.state.items}) }>
                         <View style={styles.link}>
                             <Text style={styles.h2}>Hier geht's zur Übersicht</Text>
         
