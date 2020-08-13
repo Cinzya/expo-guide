@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
+
 import { styles } from '../styles/styles';
 
 import { TouchableNativeFeedback, ScrollView } from 'react-native-gesture-handler';

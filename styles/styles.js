@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
         maxWidth: '100%',
         flexDirection: 'column',
         justifyContent: 'space-between',
+        backgroundColor: 'white'
     },
     logo: {
         width: 290,

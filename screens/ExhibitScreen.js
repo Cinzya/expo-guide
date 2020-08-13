@@ -1,5 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 
 import { styles } from '../styles/styles';
 
@@ -8,6 +10,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 export default function ExhibitScreen() {
     return (
+        <SafeAreaView>
         <View style={styles.container}>
             <ScrollView>
                 <Text style={styles.h1}>Name des Ausstellungsstücks</Text>
@@ -21,5 +24,6 @@ export default function ExhibitScreen() {
                 </Text>
             </ScrollView>
         </View>
+        </SafeAreaView>
     )
 }
