@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableNativeFeedback } from 'react-native';
 import { Icon } from 'react-native-elements';
-import { withNavigation } from 'react-navigation';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { styles } from '../styles/styles';
@@ -18,7 +17,7 @@ class HomeScreen extends Component {
                     </View>
         
                     <TouchableNativeFeedback
-                    onPress={() => { this.props.navigation.Overview() } }>
+                    onPress={() => this.props.navigation.navigate('Rooms') }>
                         <View style={styles.link}>
                             <Text style={styles.h2}>Hier geht's zur Übersicht</Text>
         
@@ -32,4 +31,4 @@ class HomeScreen extends Component {
         }
     }
 
-export default withNavigation(HomeScreen);
+export default HomeScreen;

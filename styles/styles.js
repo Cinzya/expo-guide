@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
         paddingTop: 30,
         paddingLeft: 20,
         paddingRight: 20,
-        height: '90%',
+        height: '100%',
         maxWidth: '100%',
         flexDirection: 'column',
         justifyContent: 'space-between',
