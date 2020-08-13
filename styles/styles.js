@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
     container: {
-        paddingTop: 30,
+        paddingTop: 20,
         paddingLeft: 20,
         paddingRight: 20,
         height: '100%',
@@ -33,6 +33,19 @@ export const styles = StyleSheet.create({
     exhibitText: {
         color: 'white',
         fontSize: 20
+    },
+    room: {
+        borderTopWidth: 2,
+        borderBottomWidth: 2,
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        paddingRight: 35,
+        paddingLeft: 35
+    },
+    roomText: {
+        fontSize: 21,
+        fontWeight: 'bold'
     },
     img: {
         height: 420,
