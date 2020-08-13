@@ -6,6 +6,32 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { styles } from '../styles/styles';
 
 class HomeScreen extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            setLoading: true,
+            rooms: ""
+        }
+    }
+    componentDidMount() {
+        console.log('Starting Fetch Call')
+        //Fetch request to db host
+        fetch('http://192.168.178.69/expo-guide-backend/rooms.php', {
+            method: 'get',
+            mode: 'cors',
+            headers:{
+                'Content-Type': 'application/json',     //Type of content to be sent 
+                'Accept': 'application/json'            //and to be expected
+            }
+        })
+            .then((response) => response.json())      //Turn response into JSON
+            .then((json) => this.setState({rooms: json}))            //Write response to variable
+            .then(() => console.log('New MySQL data set'))
+            .catch((error) => console.error(error))
+            .then(() => this.setState({setLoading: false}));           //Get rid of spinny thing
+      
+    }
+
     render() {
         return(
             <SafeAreaView>
@@ -13,7 +39,7 @@ class HomeScreen extends Component {
                     <Text style={styles.h1}>Es wurden keine Ausstellungsstücke in deiner Nähe gefunden.</Text>
         
                     <View style={styles.logo}>
-                        <Text>Logo Museum</Text>
+                        <Text style={styles.logoText}>Logo Museum</Text>
                     </View>
         
                     <TouchableNativeFeedback

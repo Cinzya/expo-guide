@@ -20,6 +20,11 @@ export const styles = StyleSheet.create({
         backgroundColor: 'gray',
         borderRadius: 290/2
     },
+    logoText: {
+        fontWeight: 'bold',
+        color: 'white',
+        fontSize: 21
+    },
     exhibit: {
         height: 420,
         width: '100%',
@@ -56,7 +61,8 @@ export const styles = StyleSheet.create({
     link: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-evenly'
+        justifyContent: 'space-evenly',
+        marginBottom: 40
     },
     button: {
         width: 60,
@@ -72,6 +78,7 @@ export const styles = StyleSheet.create({
         marginBottom: 20
     },
     h2: {
-        fontSize: 20
+        fontSize: 20,
+        fontWeight: 'bold'
     }
 });
