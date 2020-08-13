@@ -17,7 +17,7 @@ class HomeScreen extends Component {
     componentDidMount() {
         console.log('Starting Fetch Call')
         //Fetch request to db host
-        fetch('http://192.168.178.69/expo-guide-backend/rooms.php', {
+        fetch('http://expoguide.goetzlisa.de/rooms.php', {
             method: 'get',
             mode: 'cors',
             headers:{
@@ -33,7 +33,7 @@ class HomeScreen extends Component {
 
         console.log('Starting Fetch Call 2')
         //Fetch request to db host
-        fetch('http://192.168.178.69/expo-guide-backend/items.php', {
+        fetch('http://expoguide.goetzlisa.de/items.php', {
             method: 'get',
             mode: 'cors',
             headers:{
