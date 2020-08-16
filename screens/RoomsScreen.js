@@ -13,7 +13,7 @@ export default function RoomsScreen(props) {
 
     const { Rooms } = props.route.params;
     const { Items } = props.route.params;
-
+    
     
     return(
         <SafeAreaView>

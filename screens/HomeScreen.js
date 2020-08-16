@@ -27,7 +27,7 @@ class HomeScreen extends Component {
         })
             .then((response) => response.json())      //Turn response into JSON
             .then((json) => this.setState({rooms: json}))            //Write response to variable
-            .then(() => console.log('New MySQL data set'))
+            .then(() => console.log('Rooms MySQL data set'))
             .catch((error) => console.error(error))
             .then(() => this.setState({setLoading: false}));           //Get rid of spinny thing
 
@@ -43,10 +43,9 @@ class HomeScreen extends Component {
         })
             .then((response) => response.json())      //Turn response into JSON
             .then((json) => this.setState({items: json}))            //Write response to variable
-            .then(() => console.log(typeof(this.state.items)))
+            .then(() => console.log(this.state.items))
             .catch((error) => console.error(error))
             .then(() => this.setState({setLoading: false}));
-      
     }
 
     render() {

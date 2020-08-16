@@ -37,9 +37,17 @@ export const styles = StyleSheet.create({
     },
     exhibitText: {
         color: 'white',
-        fontSize: 20
+        fontSize: 23,
+        fontWeight: 'bold'
+    },
+    exhibitContainer: {
+        width: '100%',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
     },
     room: {
+        backgroundColor: 'white',
         borderTopWidth: 2,
         borderBottomWidth: 2,
         alignItems: 'center',
