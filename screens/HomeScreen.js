@@ -14,26 +14,10 @@ class HomeScreen extends Component {
             items: ""
         }
     }
-    componentDidMount() {
-        console.log('Starting Fetch Call')
-        //Fetch request to db host
-        fetch('http://expoguide.goetzlisa.de/rooms.php', {
-            method: 'get',
-            mode: 'cors',
-            headers:{
-                'Content-Type': 'application/json',     //Type of content to be sent 
-                'Accept': 'application/json'            //and to be expected
-            }
-        })
-            .then((response) => response.json())      //Turn response into JSON
-            .then((json) => this.setState({rooms: json}))            //Write response to variable
-            .then(() => console.log('Rooms MySQL data set'))
-            .catch((error) => console.error(error))
-            .then(() => this.setState({setLoading: false}));           //Get rid of spinny thing
 
-        console.log('Starting Fetch Call 2')
-        //Fetch request to db host
-        fetch('http://expoguide.goetzlisa.de/items.php', {
+    getDataOf(a) {
+        console.log('Starting Fetch Call:' + a)
+        fetch('http://expoguide.goetzlisa.de/' + a + '.php', {
             method: 'get',
             mode: 'cors',
             headers:{
@@ -42,10 +26,15 @@ class HomeScreen extends Component {
             }
         })
             .then((response) => response.json())      //Turn response into JSON
-            .then((json) => this.setState({items: json}))            //Write response to variable
-            .then(() => console.log(this.state.items))
+            .then((json) => this.setState({[a]: json}))            //Write response to variable
+            .then(() => console.log(a + 'MySQL data set'))
             .catch((error) => console.error(error))
-            .then(() => this.setState({setLoading: false}));
+            .then(() => console.log());           //Get rid of spinny thing
+    }
+
+    componentDidMount() {
+        this.getDataOf('rooms');
+        this.getDataOf('items');
     }
 
     render() {
