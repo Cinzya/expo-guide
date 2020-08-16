@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ImageBackground } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -27,13 +27,20 @@ export default function OverviewScreen(props) {
         onPress={() => props.navigation.navigate('Exhibit', {Item: item})}
         key={item.itemID}
         >
-      
-        <View style={styles.exhibit}>
-          <View style={styles.exhibitContainer}>
-            <Text style={styles.exhibitText}>{item.itemname}</Text>
-            <Icon name='arrow-right' type='material-community' color='#D36462' reverse/>
-          </View>
-        </View>
+          <ImageBackground
+          source={{uri: "http://expoguide.goetzlisa.de/uploads/" + item.image}}
+          style={styles.exhibit}
+          >
+           
+              <View style={styles.exhibitContainer}>
+
+
+                <Text style={styles.exhibitText}>{item.itemname}</Text>
+                <Icon name='arrow-right' type='material-community' color='#D36462' reverse/>
+                
+              
+            </View>
+        </ImageBackground>
       </TouchableNativeFeedback>
     ))
     } else {

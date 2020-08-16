@@ -26,24 +26,30 @@ export const styles = StyleSheet.create({
         fontSize: 21
     },
     exhibit: {
+        flex: 1,
         height: 420,
         width: '100%',
         backgroundColor: '#A3A3A3',
         flexDirection: 'row',
         alignItems: 'flex-end',
-        paddingHorizontal: 20,
-        paddingVertical: 20,
-        marginBottom: 15
+        marginBottom: 15,
+        resizeMode: 'cover'
     },
     exhibitText: {
         color: 'white',
+        maxWidth: '80%',
         fontSize: 23,
         fontWeight: 'bold'
+    },
+    exhibitDescription: {
+        marginBottom: 50
     },
     exhibitContainer: {
         width: '100%',
         flexDirection: 'row',
         alignItems: 'center',
+        paddingHorizontal: 20,
+        paddingVertical: 20,
         justifyContent: 'space-between'
     },
     room: {

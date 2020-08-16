@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 
@@ -19,11 +19,13 @@ export default function ExhibitScreen(props) {
                 <Text style={styles.h1}>{Item.itemname}</Text>
                 <Text style={styles.h2}>Künstler: {Item.artist}, Jahr: {Item.date}</Text>
 
-                <View style={styles.img}>
+                <Image
+                style={styles.img}
+                source={{uri: "http://expoguide.goetzlisa.de/uploads/" + Item.image}}>
 
-                </View>
+                </Image>
 
-                <Text>{Item.description}</Text>
+                <Text style={styles.exhibitDescription}>{Item.description}</Text>
             </ScrollView>
         </View>
         </SafeAreaView>
