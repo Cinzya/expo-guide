@@ -3,8 +3,11 @@ Web App for museums and expositions.
 Backend unter https://github.com/lisagoetz/expoguide_backend zu finden
 
 Ebert Cynthia, 
+
 Schmidt Georg, 150262
+
 Opp Kristin, 151486
+
 Götz Lisa, 150307
 
 lisaa.goetz@web.de
