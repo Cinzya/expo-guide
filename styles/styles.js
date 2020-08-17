@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import { Baskervville_400Regular } from '@expo-google-fonts/baskervville';
 
 export const styles = StyleSheet.create({
     container: {
@@ -89,7 +90,9 @@ export const styles = StyleSheet.create({
     h1: {
         color: '#D36462',
         fontSize: 30,
-        marginBottom: 20
+        marginBottom: 20,
+        //fontWeight: 'bold',
+        fontFamily: 'Baskervville_400Regular'
     },
     h2: {
         fontSize: 20,

@@ -20,6 +20,7 @@ export default function OverviewScreen(props) {
     }
   }
 
+
   function printItems(a) {
     if(a[0]) {
       return a.map(item => (
@@ -31,7 +32,7 @@ export default function OverviewScreen(props) {
           source={{uri: "http://expoguide.goetzlisa.de/uploads/" + item.image}}
           style={styles.exhibit}
           >
-           
+
               <View style={styles.exhibitContainer}>
 
 
@@ -49,6 +50,7 @@ export default function OverviewScreen(props) {
   }
 
   return (
+    
     <SafeAreaView>
       <View style={styles.container}>
       <Text style={styles.h1}>{printHeadline(Items)}</Text>

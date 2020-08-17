@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Lightbox from 'react-native-lightbox';
 
 
 import { styles } from '../styles/styles';
@@ -19,12 +20,13 @@ export default function ExhibitScreen(props) {
                 <Text style={styles.h1}>{Item.itemname}</Text>
                 <Text style={styles.h2}>Künstler: {Item.artist}, Jahr: {Item.date}</Text>
 
-                <Image
-                style={styles.img}
-                source={{uri: "http://expoguide.goetzlisa.de/uploads/" + Item.image}}>
+                <Lightbox>
+                    <Image
+                    style={styles.img}
+                    source={{uri: "http://expoguide.goetzlisa.de/uploads/" + Item.image}}>
 
-                </Image>
-
+                    </Image>
+                </Lightbox>
                 <Text style={styles.exhibitDescription}>{Item.description}</Text>
             </ScrollView>
         </View>

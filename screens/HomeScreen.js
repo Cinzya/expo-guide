@@ -6,8 +6,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { styles } from '../styles/styles';
 
 class HomeScreen extends Component {
-    constructor(props) {
-        super(props)
+    constructor() {
+        super()
         this.state = {
             setLoading: true,
             rooms: "",
@@ -16,7 +16,7 @@ class HomeScreen extends Component {
     }
 
     getDataOf(a) {
-        console.log('Starting Fetch Call:' + a)
+        console.log(a + ': Starting Fetch Call')
         fetch('http://expoguide.goetzlisa.de/' + a + '.php', {
             method: 'get',
             mode: 'cors',
@@ -27,15 +27,17 @@ class HomeScreen extends Component {
         })
             .then((response) => response.json())      //Turn response into JSON
             .then((json) => this.setState({[a]: json}))            //Write response to variable
-            .then(() => console.log(a + 'MySQL data set'))
+            .then(() => console.log(a + ': MySQL data set'))
             .catch((error) => console.error(error))
             .then(() => console.log());           //Get rid of spinny thing
     }
 
     componentDidMount() {
+        console.log('Component mounted')
         this.getDataOf('rooms');
         this.getDataOf('items');
     }
+
 
     render() {
         return(
