@@ -2,7 +2,7 @@
 Web App for museums and expositions.
 Backend unter https://github.com/lisagoetz/expoguide_backend zu finden
 
-Ebert Cynthia, 
+Ebert Cynthia, 150665
 
 Schmidt Georg, 150262
 
