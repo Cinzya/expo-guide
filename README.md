@@ -3,7 +3,7 @@ Web App for museums and expositions.
 
 ---
 
-# Installation
+## Installation
 ```
 $ npm install -g expo-cli
 ```
