@@ -1,5 +1,6 @@
 # expo-guide
 Web App for museums and expositions.
+
 Backend unter https://github.com/lisagoetz/expoguide_backend zu finden
 
 Ebert Cynthia, 150665
